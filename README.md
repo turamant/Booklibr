@@ -1,3 +1,3 @@
-# Library of Books
+# Library of Books (booklibr)
 
 # Go

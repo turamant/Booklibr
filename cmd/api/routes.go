@@ -20,8 +20,8 @@ func (app *application) routes() *httprouter.Router {
 	// конечных точек с помощью метода HandlerFunc(). Обратите внимание, что
 	// http.MethodGet и http.MethodPost — это константы, равные строкам "GET" и "POST".
 	router.HandlerFunc(http.MethodGet, "/v1/healthcheck", app.healthcheckHandler)
-	router.HandlerFunc(http.MethodPost, "/v1/movies", app.createMovieHandler)
-	router.HandlerFunc(http.MethodGet, "/v1/movies/:id", app.showMovieHandler)
+	router.HandlerFunc(http.MethodPost, "/v1/books", app.createBookHandler)
+	router.HandlerFunc(http.MethodGet, "/v1/books/:id", app.showBookHandler)
 
 	// Возвращаем экземпляр маршрутизатора.
 	return router
